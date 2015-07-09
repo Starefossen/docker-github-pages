@@ -10,4 +10,4 @@ RUN gem install --no-document \
   jekyll-github-metadata
 
 EXPOSE 4000
-CMD jekyll serve -w --force_polling -H 0.0.0.0 -P 4000
+CMD jekyll serve -d /_site --watch --force_polling -H 0.0.0.0 -P 4000
