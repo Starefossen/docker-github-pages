@@ -22,6 +22,20 @@ your page in a volume under `/usr/src/app` like this:
 $ docker run --rm -v "$PWD":/usr/src/app -p "4000:4000" starefossen/github-pages
 ```
 
+Remember to add all the gems to your `_config.yml` file in order to get all the
+different things to work correctly:
+
+```
+repository: your/repo
+
+gems:
+- jekyll-github-metadata
+- jekyll-mentions
+- jekyll-redirect-from
+- jekyll-sitemap
+- jemoji
+```
+
 ## Image Variants
 
 The `starefossen/github-pages` images come in two flavors, each designed for a
