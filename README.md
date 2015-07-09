@@ -4,8 +4,8 @@ Docker image for running GitHub Pages / Jekyll projects.
 
 ## Supported tags and respective `Dockerfile` links
 
-* [`latest`, `35` (Dockerfile)](https://github.com/Starefossen/docker-github-pages/blob/master/Dockerfile)
-* [`onbuild`, `35-onbuild` (Dockerfile)](https://github.com/Starefossen/docker-github-pages/blob/master/onbuild/Dockerfile)
+* [`latest` (Dockerfile)](https://github.com/Starefossen/docker-github-pages/blob/master/Dockerfile)
+* [`onbuild` (Dockerfile)](https://github.com/Starefossen/docker-github-pages/blob/master/onbuild/Dockerfile)
 
 ## What is GitHub Pages
 
