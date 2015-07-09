@@ -62,6 +62,7 @@ This Docker image is licensed under the [MIT License](https://github.com/Starefo
 Software contained in this image is licensed under the following:
 
 * github-pages gem: [MIT License](https://github.com/github/pages-gem/blob/master/LICENSE)
+* github-metadata gem: [MIT License](https://github.com/jekyll/github-metadata/blob/master/LICENSE)
 * jekyll: [MIT License](https://github.com/jekyll/jekyll/blob/master/LICENSE)
 * ruby: [2-clause BSDL](https://github.com/ruby/ruby/blob/trunk/COPYING)
 * iojs: [MIT License](https://github.com/iojs/io.js/blob/master/LICENSE)
