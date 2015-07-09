@@ -1,3 +1,3 @@
-FROM starefossen/github-pages:38
+FROM starefossen/github-pages
 
 ONBUILD COPY . /usr/src/app
