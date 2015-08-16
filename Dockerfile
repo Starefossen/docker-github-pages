@@ -1,4 +1,4 @@
-FROM turistforeningen/ruby-iojs:2.2-1.8
+FROM turistforeningen/ruby-iojs
 
 ENV GITHUB_GEM_VERSION 39
 
