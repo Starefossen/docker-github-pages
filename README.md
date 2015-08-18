@@ -15,7 +15,7 @@ GitHub repository.
 ## How to use this image
 
 This image makes it easy to run you GitHub Pages page locally while developing –
-refreshing chanes automaticly as you make them. All you need to do is to mount
+refreshing changes automatically as you make them. All you need to do is to mount
 your page in a volume under `/usr/src/app` like this:
 
 ```
