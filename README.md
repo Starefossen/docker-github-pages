@@ -19,7 +19,7 @@ refreshing chanes automaticly as you make them. All you need to do is to mount
 your page in a volume under `/usr/src/app` like this:
 
 ```
-$ docker run --rm -v "$PWD":/usr/src/app -p "4000:4000" starefossen/github-pages
+$ docker run --rm -it -v "$PWD":/usr/src/app -p "4000:4000" starefossen/github-pages
 ```
 
 Remember to add all the gems to your `_config.yml` file in order to get all the
