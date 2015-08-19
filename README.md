@@ -36,6 +36,10 @@ gems:
 - jemoji
 ```
 
+Also, in order for the `{{ site.github }}` metadata variables to be poppulated
+you need to set the `JEKYLL_GITHUB_TOKEN` environment variable with your GitHub
+token.
+
 ## Image Variants
 
 The `starefossen/github-pages` images come in two flavors, each designed for a
