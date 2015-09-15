@@ -2,6 +2,8 @@
 
 Docker image for running GitHub Pages / Jekyll projects.
 
+![Demo using GitHub Page on Docker](/assets/demo.gif)
+
 ## Supported tags and respective `Dockerfile` links
 
 * [`latest` (Dockerfile)](https://github.com/Starefossen/docker-github-pages/blob/master/Dockerfile)
