@@ -1,6 +1,6 @@
 FROM turistforeningen/ruby-iojs
 
-ENV GITHUB_GEM_VERSION 39
+ENV GITHUB_GEM_VERSION 40
 
 RUN mkdir -p /usr/src/app
 WORKDIR /usr/src/app
