@@ -1,4 +1,4 @@
-FROM turistforeningen/ruby-iojs
+FROM starefossen/ruby-node:2-4
 
 ENV GITHUB_GEM_VERSION 40
 
