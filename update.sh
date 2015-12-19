@@ -26,4 +26,4 @@ if [ -z "`git diff --staged`" ]; then
 fi
 
 git commit -m "Tag release v${NEW_VERSION}"
-git tag -a "v${NEW_VERSION}" -m "v${NEW_VERSION}" -s
+git tag -a "${NEW_VERSION}" -m "v${NEW_VERSION}" -s
