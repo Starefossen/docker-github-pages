@@ -44,6 +44,13 @@ Also, in order for the `{{ site.github }}` metadata variables to be poppulated
 you need to set the `JEKYLL_GITHUB_TOKEN` environment variable with your GitHub
 token.
 
+```
+$ docker run \
+  -v "$PWD":/usr/src/app \
+  -e JEKYLL_GITHUB_TOKEN=my-github-token \
+  -p "4000:4000" starefossen/github-pages
+```
+
 ## Image Variants
 
 The `starefossen/github-pages` images come in two flavors, each designed for a
