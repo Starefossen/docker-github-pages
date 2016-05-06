@@ -1,6 +1,6 @@
 FROM starefossen/ruby-node:2-4
 
-ENV GITHUB_GEM_VERSION 56
+ENV GITHUB_GEM_VERSION 57
 
 RUN mkdir -p /usr/src/app
 WORKDIR /usr/src/app
