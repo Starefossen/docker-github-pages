@@ -2,7 +2,7 @@
 
 Docker image for running GitHub Pages / Jekyll projects.
 
-![Demo using GitHub Page on Docker](/assets/demo.gif)
+![Demo using GitHub Page on Docker](https://raw.githubusercontent.com/Starefossen/docker-github-pages/master/assets/demo.gif)
 
 ## Supported tags and respective `Dockerfile` links
 
