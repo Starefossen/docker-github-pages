@@ -40,7 +40,7 @@ gems:
 - jemoji
 ```
 
-Also, in order for the `{{ site.github }}` metadata variables to be poppulated
+Also, in order for the `{{ site.github }}` metadata variables to be populated
 you need to set the `JEKYLL_GITHUB_TOKEN` environment variable with your GitHub
 token.
 
