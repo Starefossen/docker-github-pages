@@ -24,7 +24,7 @@ your page in a volume under `/usr/src/app` like this:
 $ docker run -v "$PWD":/usr/src/app -p "4000:4000" starefossen/github-pages
 ```
 
-And your Jekyll page with be available on `http://localhost:4000`.
+Your Jekyll page will be available on `http://localhost:4000`.
 
 Remember to add all the gems to your `_config.yml` file in order to get all the
 different things to work correctly:
