@@ -1,13 +1,21 @@
-FROM starefossen/ruby-node:2-4
+FROM starefossen/ruby-node:2-6-alpine
 
 ENV GITHUB_GEM_VERSION 136
+ENV JSON_GEM_VERSION 1.8.6
+ENV ACTIVESUPPORT_GEM_VERSION 4.2.8
 
-RUN mkdir -p /usr/src/app
+RUN apk --update add --virtual build_deps \
+    build-base ruby-dev libc-dev linux-headers \
+  && gem install --verbose --no-document \
+    activesupport:${ACTIVESUPPORT_GEM_VERSION} \
+    json:${JSON_GEM_VERSION} \
+    github-pages:${GITHUB_GEM_VERSION} \
+    jekyll-github-metadata \
+  && apk del build_deps \
+  && mkdir -p /usr/src/app \
+  && rm -rf /usr/lib/ruby/gems/*/cache/*.gem
+
 WORKDIR /usr/src/app
 
-RUN gem install --no-document \
-  github-pages:${GITHUB_GEM_VERSION} \
-  jekyll-github-metadata
-
-EXPOSE 4000
+EXPOSE 4000 80
 CMD jekyll serve -d /_site --watch --force_polling -H 0.0.0.0 -P 4000
