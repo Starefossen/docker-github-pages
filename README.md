@@ -7,6 +7,7 @@ Alpine Docker image for running GitHub Pages / Jekyll projects. Only 75 MB.
 ## Supported tags and respective `Dockerfile` links
 
 * [`latest` (Dockerfile)](https://github.com/Starefossen/docker-github-pages/blob/master/Dockerfile)
+* [`onbuild` (Dockerfile)](https://github.com/Starefossen/docker-github-pages/blob/master/onbuild/Dockerfile)
 
 ## What is GitHub Pages
 
