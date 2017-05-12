@@ -84,9 +84,9 @@ Software contained in this image is licensed under the following:
 
 ## Supported Docker versions
 
-This image is officially supported on Docker version 1.6.1.
+This image is officially supported on Docker version v17.
 
-Support for older versions (down to 1.0) is provided on a best-effort basis.
+Support for older versions (down to v1.0) is provided on a best-effort basis.
 
 ## User Feedback
 
