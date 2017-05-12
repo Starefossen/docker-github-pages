@@ -1,6 +1,6 @@
 # Alpine Docker GitHub Pages [![Image Layers](https://images.microbadger.com/badges/image/starefossen/github-pages.svg)](https://microbadger.com/#/images/starefossen/github-pages)
 
-Alpine Docker image for running GitHub Pages / Jekyll projects. Only 75 MB.
+Alpine Docker image for running GitHub Pages / Jekyll projects. Only 70 MB.
 
 ![Demo using GitHub Page on Docker](https://raw.githubusercontent.com/Starefossen/docker-github-pages/master/assets/demo.gif)
 
