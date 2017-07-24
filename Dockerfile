@@ -9,6 +9,7 @@ RUN apk --update add --virtual build_deps \
     json:${JSON_GEM_VERSION} \
     github-pages:${GITHUB_GEM_VERSION} \
     jekyll-github-metadata \
+    minitest \
   && apk del build_deps \
   && mkdir -p /usr/src/app \
   && rm -rf /usr/lib/ruby/gems/*/cache/*.gem
