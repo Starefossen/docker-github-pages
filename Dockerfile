@@ -11,6 +11,7 @@ RUN apk --update add --virtual build_deps \
     jekyll-github-metadata \
     minitest \
   && apk del build_deps \
+  && apk add git \
   && mkdir -p /usr/src/app \
   && rm -rf /usr/lib/ruby/gems/*/cache/*.gem
 
