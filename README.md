@@ -21,7 +21,7 @@ refreshing changes automatically as you make them. All you need to do is to moun
 your page in a volume under `/usr/src/app` like this:
 
 ```
-$ docker run -v "$PWD":/usr/src/app -p "4000:4000" starefossen/github-pages
+$ docker run -t --rm -v "$PWD":/usr/src/app -p "4000:4000" starefossen/github-pages
 ```
 
 Your Jekyll page will be available on `http://localhost:4000`.
@@ -46,6 +46,7 @@ token.
 
 ```
 $ docker run \
+  -t --rm \
   -v "$PWD":/usr/src/app \
   -e JEKYLL_GITHUB_TOKEN=my-github-token \
   -p "4000:4000" starefossen/github-pages
