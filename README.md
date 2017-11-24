@@ -52,6 +52,10 @@ $ docker run \
   -p "4000:4000" starefossen/github-pages
 ```
 
+## Slow filesystem issues in Docker for Mac
+
+When running this image in [Docker for Mac](https://docs.docker.com/docker-for-mac/) you might experience slow page generation times. This is due to some limitations in the Docker for Mac filesystem integration. Changing the volume configuration to `-v "$PWD":/usr/src/app:delegated` will massively improve the page generation time, at the cost of delaying the generated files showing up in your host system slightly. In case you don't even need the generated pages on your host system, you can also exclude the `_site/` folder completely from being mounted by adding a container-only volume: `-v site:/usr/src/app/_site`.
+
 ## Image Variants
 
 The `starefossen/github-pages` images come in two flavors, each designed for a
