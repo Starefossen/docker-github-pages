@@ -1,6 +1,6 @@
 FROM starefossen/ruby-node:2-6-alpine
 
-ENV GITHUB_GEM_VERSION 190
+ENV GITHUB_GEM_VERSION 191
 ENV JSON_GEM_VERSION 1.8.6
 
 RUN apk --update add --virtual build_deps \
