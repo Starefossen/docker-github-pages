@@ -70,7 +70,7 @@ services:
     tty: true
 ```
 
-Then start the container with `docker-compose run --rm -p 4000:4000 jekyll`.
+Then start the container with `docker-compose run --rm --service-ports jekyll`.
 
 ## Slow filesystem issues in Docker for Mac
 
