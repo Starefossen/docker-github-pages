@@ -64,13 +64,13 @@ services:
     environment:
       - "JEKYLL_GITHUB_TOKEN:${JEKYLL_GITHUB_TOKEN}"
     ports:
-      - "4000"
+      - "4000:4000"
     volumes:
       - ./:/usr/src/app
     tty: true
 ```
 
-Then start the container with `docker-compose run --rm --service-ports jekyll`.
+Then start the container with `docker-compose up`.
 
 ## Slow filesystem issues in Docker for Mac
 
