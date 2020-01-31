@@ -118,7 +118,7 @@ Support for older versions (down to v1.0) is provided on a best-effort basis.
 ### Documentation
 
 * [Docker](http://docs.docker.com)
-* [Jekyll](https://jekyllrb.org)
+* [Jekyll](https://jekyllrb.com)
 * [GitHub Pages](https://pages.github.com)
 
 ### Issues
