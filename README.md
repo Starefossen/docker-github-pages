@@ -26,8 +26,12 @@ $ docker run -it --rm -v "$PWD":/usr/src/app -p "4000:4000" starefossen/github-p
 
 Your Jekyll page will be available on `http://localhost:4000`.
 
-Remember to add all the gems to your `_config.yml` file in order to get all the
-different things to work correctly:
+Remember to add all the plugin gems to both your Gemfile and the
+`_config.yml` file in order to install the gems during `docker run` and to
+get all the different things to work correctly in Jekyll.
+
+*** Are there some gems brought in that users do not need to explicitly declare?
+Can we list those here? ***
 
 ```
 repository: your/repo
@@ -39,6 +43,24 @@ gems:
 - jekyll-sitemap
 - jemoji
 ```
+
+For example, to add the [jekyll-seo-tag](https://github.com/jekyll/jekyll-seo-tag)
+plugin, add the gem to your Gemfile:
+```ruby
+gem 'jeyll-seo-tag'
+```
+
+and to your _config.yml:
+```
+gems:
+- jekyll-seo-tag
+```
+
+Then the next time your container is run, the gem will be installed by bundler
+and jekyll pages with the `{% seo %}` markup will be treated correctly.
+
+If bundler fails to install your gems, it's worth deleting the `Gemfile.lock`
+file and restarting the container to resolve the dependencies from scratch.
 
 Also, in order for the `{{ site.github }}` metadata variables to be populated
 you need to set the `JEKYLL_GITHUB_TOKEN` environment variable with your GitHub
